@@ -20,14 +20,6 @@ def get_working_roster(roster)
   return working_roster
 end
 
-def get_bench_size(players)
-  if players > 11
-    return players - 11
-  else
-    return 0
-  end
-end
-
 def create_bench_order(players)
   kicking_order = []
   guys = []
@@ -39,6 +31,8 @@ def create_bench_order(players)
       guys << player
     end
   end
+
+
 
   if guys.length > girls.length
     bigger = guys
@@ -53,10 +47,11 @@ def create_bench_order(players)
 
   (smaller.length).times do |x|
     kicking_order << bigger[0]
-    guys.shift
+    bigger.shift
     kicking_order << smaller[0]
-    girls.shift
+    smaller.shift
   end
+
   index = 0
   while bigger.any?
     kicking_order.insert(index, bigger[0])
@@ -154,7 +149,7 @@ def export_defense(game, no_of_players)
   end
 end
 
-def export_kicking_order(game, players)
+def export_kicking_order(players)
   header = ["Kicking"]
   CSV.open("kicking_order.csv", "w") do |csv|
     csv << header

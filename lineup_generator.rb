@@ -10,7 +10,7 @@ roster = get_working_roster(FULL_ROSTER)
 #create the kicking order
 roster = create_bench_order(roster)
 #export the basic version of the kicking order, which will be adjusted by hand
-export_kicking_order(g, roster)
+export_kicking_order(roster)
 #set bench for each inning
 set_benches(g, roster, roster.length)
 #set the defense for each inning
