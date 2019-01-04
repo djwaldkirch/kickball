@@ -1,11 +1,6 @@
 require 'csv'
 require_relative 'players.rb'
 
-FULL_ROSTER = [Dan.new, Jamie.new, Luis.new, Maria.new, Jon.new, Sara.new,
-              Cam.new, Leslie.new, Dom.new, Kenny.new, Felicia.new, Sarah.new,
-              Jay.new, Xtina.new, Kristen.new, Sharon.new, Flavia.new, Joe.new,
-              Steven.new]
-
 def get_innings(game)
   puts "How many innings do you want to plan?"
   no_of_innings = gets.chomp.to_i
@@ -122,16 +117,16 @@ end
 
 def export_defense(game, no_of_players)
   header = [" "]
-  pitcher_row = ["P:"]
-  catcher_row = ["C:"]
-  first_row = ["1:"]
-  second_row = ["2:"]
-  third_row = ["3:"]
-  lr_row = ["LR:"]
-  rr_row = ["RR:"]
-  l_row = ["L:"]
-  lc_row = ["LC:"]
-  rc_row = ["RC:"]
+  pitcher_row = ["P"]
+  catcher_row = ["C"]
+  first_row = ["1"]
+  second_row = ["2"]
+  third_row = ["3"]
+  lr_row = ["LR"]
+  rr_row = ["RR"]
+  l_row = ["L"]
+  lc_row = ["LC"]
+  rc_row = ["RC"]
   r_row = ["R"]
   rows = [header,pitcher_row,catcher_row,first_row,second_row,third_row,lr_row,rr_row,l_row,lc_row,rc_row,r_row]
   index = 0
