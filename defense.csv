@@ -1,14 +1,15 @@
  ,1,2,3,4,5,6,7
-P,Sara J,Jon,Jon,Sara J,Dan,Jon,Sara J
-C,Cam,Dan,Felicia,Jamie,Sara J,Luis,Jamie
-1,Felicia,Felicia,Sarah B,Sarah B,Felicia,Sarah B,Sarah B
-2,Kenny,Kenny,Kenny,Kenny,Maria,Maria,Kenny
-3,Sarah B,Sarah B,Maria,Felicia,Kenny,Felicia,Felicia
-LR,Dom,Dom,Dom,Jon,Dom,Cam,Dom
-RR,Maria,Maria,Cam,Cam,Cam,Kenny,Maria
-L,Leslie,Leslie,Sara J,Leslie,Luis,Jamie,Luis
-LC,Luis,Sara J,Dan,Dan,Sarah B,Dan,Jon
-RC,Jon,Cam,Jamie,Dom,Leslie,Dom,Dan
-R,Jamie,Luis,Leslie,Luis,Jamie,Leslie,Leslie
+P,Dom,Leslie,Luis,Jon,Luis,Jamie,Luis
+C,Sarah B,Felicia,Kenny,Maria,Felicia,Cam,Maria
+1,Felicia,Sarah B,Felicia,Sarah B,Sarah B,Sarah B,Felicia
+2,Maria,Kenny,Sarah B,Kenny,Kenny,Maria,Kenny
+3,Kenny,Maria,Jamie,Felicia,Sara J,Leslie,Cam
+LR,Jon,Jon,Dom,Dom,Jon,Jon,Jon
+RR,Leslie,Jay,Cam,Leslie,Maria,Sara J,Jamie
+L,Jamie,Sara J,Jay,Luis,Jay,Jay,Leslie
+LC,Sara J,Dan,Sara J,Dan,Dan,Dan,Dom
+RC,Cam,Cam,Dan,Jay,Cam,Dom,Sara J
+R,Luis,Dom,Leslie,Jamie,Jamie,Luis,Dan
  
- ,Dan,Jamie,Luis,Maria,Jon,Sara J,Cam
+ ,Jay,Jamie,Maria,Sara J,Leslie,Felicia,Sarah B
+ ,Dan,Luis,Jon,Cam,Dom,Kenny,Jay

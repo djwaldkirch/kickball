@@ -1,5 +1,5 @@
 class Player
-  attr_reader :name, :gender, :positions, :good_kicker
+  attr_accessor :name, :gender, :positions, :good_kicker
   def initialize(name, gender, positions, good_kicker)
     @name = name
     @gender = gender

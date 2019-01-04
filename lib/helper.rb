@@ -32,7 +32,6 @@ def create_bench_order(players)
   kicking_order = []
   guys = []
   girls = []
-  extras = []
   players.each do |player|
     if player.gender == 'f'
       girls << player
@@ -40,40 +39,31 @@ def create_bench_order(players)
       guys << player
     end
   end
+
   if guys.length > girls.length
-    (girls.length).times do |x|
-      kicking_order << guys[0]
-      guys.shift
-      kicking_order << girls[0]
-      girls.shift
-    end
-    index = 0
-    while guys.any?
-      kicking_order.insert(index, guys[0])
-      guys.shift
-      index += 3
-    end
-    return kicking_order
-
+    bigger = guys
+    smaller = girls
   elsif girls.length > guys.length
-    (guys.length).times do |x|
-      kicking_order << girls[0]
-      girls.shift
-      kicking_order << guys[0]
-      guys.shift
-    end
-    index = 0
-    while girls.any?
-      kicking_order.insert(index, girls[0])
-      girls.shift
-      index += 3
-    end
-    return kicking_order
-
+    bigger = girls
+    smaller = guys
   elsif guys.length == girls.length
     kicking_order = guys.zip(girls).compact.flatten
     return kicking_order
   end
+
+  (smaller.length).times do |x|
+    kicking_order << bigger[0]
+    guys.shift
+    kicking_order << smaller[0]
+    girls.shift
+  end
+  index = 0
+  while bigger.any?
+    kicking_order.insert(index, bigger[0])
+    bigger.shift
+    index += 3
+  end
+  return kicking_order
 end
 
 def set_benches(game, bench_order, number_of_players)
