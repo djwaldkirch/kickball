@@ -32,8 +32,6 @@ def create_bench_order(players)
     end
   end
 
-
-
   if guys.length > girls.length
     bigger = guys
     smaller = girls
