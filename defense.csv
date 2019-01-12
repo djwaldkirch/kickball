@@ -1,21 +1,21 @@
  ,1,2,3,4,5,6,7
-P,Xtina,Dan,Kristen,Jay,Cam,Kristen,Steven
-C,Kristen,Sharon,Kenny,Xtina,Kenny,Flavia,Sara J
-1,Felicia,Maria,Felicia,Kristen,Sarah B,Xtina,Felicia
-2,Kenny,Flavia,Xtina,Flavia,Maria,Kenny,Flavia
-3,Sarah B,Luis,Sarah B,Sharon,Felicia,Sharon,Luis
-LR,Cam,Jon,Cam,Dan,Dom,Dom,Jon
-RR,Sharon,Joe,Dom,Maria,Jon,Sarah B,Maria
-L,Steven,Sara J,Sara J,Steven,Sara J,Joe,Jamie
-LC,Dom,Jamie,Jay,Jamie,Leslie,Jay,Dan
-RC,Joe,Leslie,Jon,Luis,Dan,Jamie,Cam
-R,Jay,Steven,Leslie,Joe,Luis,Steven,Leslie
- 
- ,Flavia,Cam,Joe,Sara J,Xtina,Dan,Dom
- ,Jamie,Felicia,Sharon,Jon,Jay,Maria,Sarah B
- ,Dan,Dom,Steven,Leslie,Kristen,Luis,Kenny
- ,Maria,Sarah B,Flavia,Cam,Joe,Sara J,Xtina
- ,Luis,Kenny,Jamie,Felicia,Sharon,Jon,Jay
- ,Sara J,Xtina,Dan,Dom,Steven,Leslie,Kristen
- ,Jon,Jay,Maria,Sarah B,Flavia,Cam,Joe
- ,Leslie,Kristen,Luis,Kenny,Jamie,Felicia,Sharon
+P,Xtina,Steven,Kristen,Steven,Flavia,Xtina,Kristen
+C,Sharon,Felicia,Sharon,Felicia,Sharon,Sara J,Sharon
+1,Kristen,Sarah B,Xtina,Sarah B,Kristen,Sarah B,Kenny
+3,Flavia,Jon,Flavia,Xtina,Kenny,Felicia,Flavia
+LR,Steven,Cam,Jon,Dom,Jon,Dom,Dom
+RR,Kenny,Maria,Kenny,Maria,Maria,Cam,Maria
+L,Jay,Jamie,Luis,Jamie,Leslie,Jamie,Leslie
+LC,Luis,Dom,Dan,Sara J,Dan,Dan,Jon
+RC,Dan,Sara J,Jay,Cam,Jay,Steven,Luis
+R,Leslie,Joe,Leslie,Joe,Luis,Joe,Jay
+ ,,,,,,,
+ ,Felicia,Flavia,Steven,Jon,Xtina,Maria,Dan
+ ,Sarah B,Kenny,Felicia,Flavia,Steven,Jon,Xtina
+ ,Cam,Sharon,Sarah B,Kenny,Felicia,Flavia,Steven
+ ,Jamie,Jay,Cam,Sharon,Sarah B,Kenny,Felicia
+ ,Joe,Leslie,Jamie,Jay,Cam,Sharon,Sarah B
+ ,Sara J,Luis,Joe,Leslie,Jamie,Jay,Cam
+ ,Dom,Kristen,Sara J,Luis,Joe,Leslie,Jamie
+ ,Maria,Dan,Dom,Kristen,Sara J,Luis,Joe
+ ,Jon,Xtina,Maria,Dan,Dom,Kristen,Sara J

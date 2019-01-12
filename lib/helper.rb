@@ -24,6 +24,7 @@ def create_bench_order(players)
   kicking_order = []
   guys = []
   girls = []
+  players = players.shuffle
   players.each do |player|
     if player.gender == 'f'
       girls << player
@@ -60,7 +61,7 @@ def create_bench_order(players)
 end
 
 def set_benches(game, bench_order, number_of_players)
-  bench_no = number_of_players - 11
+  bench_no = number_of_players - 10
   game.innings.each do |inning|
     bench_no.times do
       player = bench_order[0]
@@ -103,7 +104,6 @@ def export_defense(game, no_of_players)
   pitcher_row = ["P"]
   catcher_row = ["C"]
   first_row = ["1"]
-  second_row = ["2"]
   third_row = ["3"]
   lr_row = ["LR"]
   rr_row = ["RR"]
@@ -111,7 +111,7 @@ def export_defense(game, no_of_players)
   lc_row = ["LC"]
   rc_row = ["RC"]
   r_row = ["R"]
-  rows = [header,pitcher_row,catcher_row,first_row,second_row,third_row,lr_row,rr_row,l_row,lc_row,rc_row,r_row]
+  rows = [header,pitcher_row,catcher_row,first_row,third_row,lr_row,rr_row,l_row,lc_row,rc_row,r_row]
   index = 0
   bench_index = 0
   game.innings.each do |inning|
@@ -120,7 +120,6 @@ def export_defense(game, no_of_players)
     pitcher_row << inning.defense[:pitcher]
     catcher_row << inning.defense[:catcher]
     first_row << inning.defense[:first]
-    second_row << inning.defense[:second]
     third_row << inning.defense[:third]
     lr_row << inning.defense[:lr]
     rr_row << inning.defense[:rr]
@@ -136,7 +135,7 @@ def export_defense(game, no_of_players)
     csv << [" "]
 
     bench_index = 0
-    (no_of_players - 11).times do
+    (no_of_players - 10).times do
       array = [" "]
       game.innings.each do |inning|
         array << inning.bench[bench_index].name
